@@ -9,7 +9,7 @@ rz_client = RazorpayClient
 
 
 
-class CreateOrderapi(APIView):
+class CreateOrderApi(APIView):
 
     def post(self,request):
         create_order_serializer = CreateOrderSerializer(

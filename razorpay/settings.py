@@ -28,9 +28,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-# razorpay
-key_id = os.environ.get("key_id")
-key_secret = os.environ.get("key_secret")
 
 # Application definition
 
@@ -41,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest-framework'
-    'backend.apps.BackendConfig'
+    'rest_framework',
+    'backend',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +125,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+# razorpay
+KEY_ID = os.environ.get("KEY_ID")
+KEY_SECRET = os.environ.get("KEY_SECRET")
